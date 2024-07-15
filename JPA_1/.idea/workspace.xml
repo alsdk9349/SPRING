@@ -5,19 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7fd6bd5-135f-455a-bc0b-89afcf363acc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/jpashop/jpashop/src/main/java/jpabook/jpashop/controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jpashop/jpashop/src/main/java/jpabook/jpashop/repository/OrderSearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jpashop/jpashop/src/main/java/jpabook/jpashop/service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jpashop/jpashop/src/main/resources/templates/fragments/bodyHeader.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jpashop/jpashop/src/main/resources/templates/fragments/footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jpashop/jpashop/src/main/resources/templates/fragments/header.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jpashop/jpashop/src/main/resources/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jpashop/jpashop/src/test/java/jpabook/jpashop/service/OrderServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jpashop/jpashop/src/main/java/jpabook/jpashop/controller/BookForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jpashop/jpashop/src/main/java/jpabook/jpashop/controller/ItemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jpashop/jpashop/src/main/java/jpabook/jpashop/controller/MemberController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jpashop/jpashop/src/main/java/jpabook/jpashop/controller/MemberForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jpashop/jpashop/src/main/resources/static/css/jumbotron-narrow.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jpashop/jpashop/src/main/resources/templates/items/createItemForm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jpashop/jpashop/src/main/resources/templates/members/createMemberForm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jpashop/jpashop/src/main/resources/templates/members/memberList.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jpashop/jpashop/src/main/java/jpabook/jpashop/domain/Item/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/jpashop/jpashop/src/main/java/jpabook/jpashop/domain/Item/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jpashop/jpashop/src/main/java/jpabook/jpashop/domain/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/jpashop/jpashop/src/main/java/jpabook/jpashop/domain/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jpashop/jpashop/src/main/java/jpabook/jpashop/domain/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/jpashop/jpashop/src/main/java/jpabook/jpashop/domain/OrderItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jpashop/jpashop/src/main/java/jpabook/jpashop/repository/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/jpashop/jpashop/src/main/java/jpabook/jpashop/repository/OrderRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,8 +46,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit4 Test Class" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -67,30 +63,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Gradle.Build jpashop.executor": "Run",
-    "Gradle.C:/Users/LG-gram/Desktop/SPRING_1/jpashop/jpashop/build.gradle.executor": "Run",
-    "Gradle.JpashopApplicationTests.executor": "Run",
-    "Gradle.MemberRepositoryTest.executor": "Run",
-    "Gradle.MemberServiceTest.executor": "Run",
-    "Gradle.OrderServiceTest.executor": "Run",
-    "Gradle.jpashop [:JpashopApplication.main()].executor": "Run",
-    "Gradle.jpashop.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/LG-gram/Desktop/SPRING_1/jpashop/jpashop/src/test/resources",
-    "project.structure.last.edited": "Problems",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.keymap"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Gradle.Build jpashop.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.C:/Users/LG-gram/Desktop/SPRING_1/jpashop/jpashop/build.gradle.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.JpashopApplicationTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MemberRepositoryTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MemberServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.OrderServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.jpashop [:JpashopApplication.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.jpashop.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit4&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/LG-gram/Desktop/SPRING_1/jpashop/jpashop/src/test/resources&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="jpabook.jpashop.domain" />
