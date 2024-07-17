@@ -3,6 +3,7 @@ package jpabook.jpashop.repository;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.TypedQuery;
 import jakarta.persistence.criteria.*;
+import jpabook.jpashop.api.OrderSimpleApiController;
 import jpabook.jpashop.domain.Member;
 import jpabook.jpashop.domain.Order;
 import lombok.RequiredArgsConstructor;
@@ -58,5 +59,15 @@ public List<Order> findAllByCriteria(OrderSearch orderSearch) {
     cq.where(cb.and(criteria.toArray(new Predicate[criteria.size()])));
     TypedQuery<Order> query = em.createQuery(cq).setMaxResults(1000); //최대 1000건
     return query.getResultList();
-}
+    }
+
+    public List<Order> findAllWithMemberDelivery() {
+        return em.createQuery(
+                "select o from Order o" +
+                        " join fetch o.member m" +
+                        " join fetch o.delivery d", Order.class
+        ).getResultList();
+    }
+
+
 }
