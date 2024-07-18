@@ -9,7 +9,7 @@ public class OrderSimpleQueryRepository {
     private final EntityManager em;
     public List<OrderSimpleQueryDto> findOrderDtos() {
         return em.createQuery(
-                "select new jpabook.jpashop.repository.order.simplequery.OrderSimpleQueryDto(o.id, m.name,o.ordertime, o.status, d.address)" +
+                "select new jpabook.jpashop.repository.simplequery.OrderSimpleQueryDto(o.id, m.name,o.ordertime, o.status, d.address)" +
                         " from Order o" +
                                 " join o.member m" +
                                 " join o.delivery d", OrderSimpleQueryDto.class)
