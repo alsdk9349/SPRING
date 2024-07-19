@@ -88,3 +88,7 @@ public List<Order> findAllByCriteria(OrderSearch orderSearch) {
                 .getResultList();
     }
 }
+
+//public List<Order> findAll(OrderSearch orderSearch) {
+//
+//}
